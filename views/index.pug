@@ -1,0 +1,40 @@
+extends layout
+
+block content
+	.sidenav
+		a(href="javascript:alert('Because%20why%20not?');") Why?
+		a(href='https://cloud.google.com/vision/') How?
+  
+	.main
+		//h1= title
+		//p Welcome to #{title}
+		h1 Get that text/landmark
+		p Do you want to copy text but you can't highlight it? 
+			| Is it in a jpeg or png? 
+			| Then don't worry, we will give you a easy copiable version of the text you want!
+
+		//- var path = document.location.pathname;
+		//- var directory = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
+		//p directory
+		// register form
+		form(method='POST' action='/')
+			div.form-group
+				label(for='file') Please specify a file, or a set of files: 
+				input#file.form-control(name="datafile" size="40" type="file")
+				//input#file.form-control(type='text', placeholder='first and last' name='file')
+				button.btn.btn-primary(type='submit') Let the magic happen
+				//- var file = true
+		
+		
+	.footer
+		p Created by: then00bs, Southampton 2018
+		
+		
+		
+block translate
+	.sidenav
+		a(href="javascript:alert('Because%20why%20not?');") Why?
+		a(href='https://cloud.google.com/vision/') How?
+  
+	.main
+		h1 Translate
